@@ -1,0 +1,8 @@
+﻿<h3>Top Employees</h3>
+<div class="grid grid-pad">
+    <div *ngFor="#emp of employees" (click)="gotoDetail(emp)" class="col-1-4">
+        <div class="module employee">
+            <h4>{{emp.name}}</h4>
+        </div>
+    </div>
+</div>
